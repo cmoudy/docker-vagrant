@@ -1,0 +1,14 @@
+
+#use the official puppet labs forge
+
+forge "http://forge.puppetlabs.com"
+
+mod "garethr/docker", "0.12.0"
+
+
+
+
+
+
+
+
