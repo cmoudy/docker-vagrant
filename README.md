@@ -21,7 +21,7 @@ This Vagrant setup will get you going with creating your very own [Docker] (http
 1. SSH into the Docker Host Machine: `vagrant ssh docker`
 * Switch to the ubuntu base image folder `cd /vagrant/images/ubuntu-base`
 * Build the base image with the following: `sudo docker build -t ubuntu-base:1.0.0 .` 
-* Switch over to the included HAProxy example image and build it as well: sudo docker build -t haproxy:1.0.0 .
+* Switch over to `cd ../haproxy/` the included HAProxy example image and build it as well: `sudo docker build -t haproxy:1.0.0 .`
 * Start an HAProxy container using the newly created HAProxy Image: `sudo docker run -i -t -p 9000:9000 haproxy:1.0.0`
 * Navigate to your browser to view your [HAProxy] (http://haproxy:haproxy@192.168.1.4:9000) instance is up and running using haproxy/haproxy.  
 
